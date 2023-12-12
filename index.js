@@ -3,8 +3,8 @@ const form = document.getElementById("form-comparacao");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  let CampoA = document.getElementById("campo-A").value;
-  let CampoB = document.getElementById("campo-B").value;
+  let CampoA = parseInt(document.getElementById("campo-A").value);
+  let CampoB = parseInt(document.getElementById("campo-B").value);
   let mensagemSucesso = "<b>Sucesso</b>";
   let MensagemInvalido = "<b>Invalido</b>";
 
@@ -23,4 +23,6 @@ form.addEventListener("submit", function (e) {
     CampoA = "";
     CampoB = "";
   }
+  CampoA = "";
+  CampoB = "";
 });
